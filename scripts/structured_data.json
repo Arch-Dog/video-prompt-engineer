@@ -1,0 +1,163 @@
+{
+  "characters": [
+    {
+      "name": "苏锦",
+      "count": 7,
+      "has_ref_default": true
+    },
+    {
+      "name": "苏承",
+      "count": 3,
+      "has_ref_default": true
+    },
+    {
+      "name": "苏媚",
+      "count": 1,
+      "has_ref_default": false
+    }
+  ],
+  "scenes": [
+    {
+      "name": "苏府，夜，内\u0001\u0001",
+      "count": 1,
+      "has_ref": false,
+      "has_ref_default": false
+    },
+    {
+      "name": "、林场，夜，内\u0001\u0001",
+      "count": 1,
+      "has_ref": false,
+      "has_ref_default": false
+    },
+    {
+      "name": "林场，夜，内\u0001\u0001",
+      "count": 1,
+      "has_ref": false,
+      "has_ref_default": false
+    }
+  ],
+  "dialogues": [
+    {
+      "content": "（旁⽩）三年前，⾝为朝廷重⾂的外祖⽗被⼈构陷通敌叛国，在狱中蒙冤致死，⽗亲和嫡⺟害",
+      "character": "苏锦",
+      "emotion": null,
+      "emotional_direction": null,
+      "speed_type": "normal",
+      "duration": 8.3,
+      "scene": "苏府，夜，内\u0001\u0001",
+      "line_num": 6
+    },
+    {
+      "content": "爹，我娘快不⾏了，求求您给我五⼗⽂为娘请个⼤夫。",
+      "character": "苏锦",
+      "emotion": null,
+      "emotional_direction": null,
+      "speed_type": "normal",
+      "duration": 6.1,
+      "scene": "苏府，夜，内\u0001\u0001",
+      "line_num": 10
+    },
+    {
+      "content": "⽗亲，你宁可给狗治病，也不愿救我娘亲性命么！\u0001",
+      "character": "苏锦",
+      "emotion": null,
+      "emotional_direction": null,
+      "speed_type": "normal",
+      "duration": 6.3,
+      "scene": "苏府，夜，内\u0001\u0001",
+      "line_num": 17
+    },
+    {
+      "content": "⼤胆！还不快滚！别在这冲撞了神医！",
+      "character": "苏承",
+      "emotion": null,
+      "emotional_direction": null,
+      "speed_type": "normal",
+      "duration": 6.2,
+      "scene": "苏府，夜，内\u0001\u0001",
+      "line_num": 18
+    },
+    {
+      "content": "娘，⼥⼉没⽤。没能求到半⽂钱，明天我就去清⽉楼求求⽼妈妈，借些钱给您买药。",
+      "character": "苏锦",
+      "emotion": null,
+      "emotional_direction": null,
+      "speed_type": "normal",
+      "duration": 9.8,
+      "scene": "、林场，夜，内\u0001\u0001",
+      "line_num": 24
+    },
+    {
+      "content": "你们要做什么？",
+      "character": "苏锦",
+      "emotion": null,
+      "emotional_direction": null,
+      "speed_type": "normal",
+      "duration": 2.4,
+      "scene": "、林场，夜，内\u0001\u0001",
+      "line_num": 31
+    },
+    {
+      "content": "（恐惧）⺟亲，我们真的要这样做吗？",
+      "character": "苏媚",
+      "emotion": null,
+      "emotional_direction": null,
+      "speed_type": "normal",
+      "duration": 4.4,
+      "scene": "、林场，夜，内\u0001\u0001",
+      "line_num": 33
+    },
+    {
+      "content": "⽗亲！我亦是你亲⽣⻣⾁啊！",
+      "character": "苏锦",
+      "emotion": null,
+      "emotional_direction": null,
+      "speed_type": "normal",
+      "duration": 3.8,
+      "scene": "、林场，夜，内\u0001\u0001",
+      "line_num": 37
+    },
+    {
+      "content": "夫⼈，我觉得不妥。",
+      "character": "苏承",
+      "emotion": null,
+      "emotional_direction": null,
+      "speed_type": "normal",
+      "duration": 3.1,
+      "scene": "、林场，夜，内\u0001\u0001",
+      "line_num": 38
+    },
+    {
+      "content": "锦⼉的脸蛋实在太美了，趁早砸烂得好，否则到了阴曹地府，若是被达官贵⼈给看上，到时候",
+      "character": "苏承",
+      "emotion": null,
+      "emotional_direction": null,
+      "speed_type": "normal",
+      "duration": 10.2,
+      "scene": "、林场，夜，内\u0001\u0001",
+      "line_num": 40
+    },
+    {
+      "content": "毒妇，我就算做⻤，也不会放过你们！",
+      "character": "苏锦",
+      "emotion": null,
+      "emotional_direction": null,
+      "speed_type": "normal",
+      "duration": 5.2,
+      "scene": "、林场，夜，内\u0001\u0001",
+      "line_num": 43
+    }
+  ],
+  "emotional_beats": [],
+  "director_decisions": {
+    "narrative_order": [],
+    "space_scheduling": {},
+    "omissions": []
+  },
+  "metadata": {
+    "total_lines": 48,
+    "total_dialogues": 11,
+    "total_characters": 3,
+    "total_scenes": 3
+  }
+}
