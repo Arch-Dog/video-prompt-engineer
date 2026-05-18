@@ -165,16 +165,22 @@ Step 5: 质检（11项分级检查，不通过则返工）
 
 ```
 video-prompt-engineer/
-├── SKILL.md              # 主 skill 文件（完整规范）
-├── README.md             # 本文件（快速入门）
-├── CHANGELOG.md          # 版本更新记录
-├── LICENSE               # MIT License
+├── SKILL.md                       # 主 skill 文件（核心流程 + 快速导航）
+├── README.md                      # 本文件（快速入门）
+├── CHANGELOG.md                   # 版本更新记录
+├── LICENSE                        # MIT License
 ├── scripts/
-│   └── parser.py         # 剧本解析器（可选）
+│   └── parser.py                  # 剧本解析器（可选优化）
 └── references/
-    ├── 情绪外化速查.md    # 情绪外化速查表
-    ├── 运镜指南.md        # 运镜指南
-    └── 提示词模板.md      # 提示词模板
+    ├── narrative-transcoding.md   # 叙事转译：情绪→动作映射、氛围关键词
+    ├── shot-composition.md        # 镜头切分合并、空间调度、衔接手法
+    ├── prompt-formula.md          # 提示词公式、标点规范、动作描述规则
+    ├── quality-rubric.md          # 11 项质检标准、优先级、失败回溯
+    ├── audio-handling.md          # 音频时长估算、音色参数、对话关系
+    ├── parser-guide.md            # 剧本解析器使用说明
+    ├── 情绪外化速查.md             # 情绪外化速查表
+    ├── 运镜指南.md                 # 运镜指南
+    └── 提示词模板.md               # 提示词模板
 ```
 
 ---
@@ -216,9 +222,9 @@ python3 parser.py script.txt > structured_data.json
 
 ## 版本
 
-- **当前版本：v1.9**
-- **更新日期：2026-05-12**
-- **更新内容**：架构级重构——从"台词驱动"升级为"音频内容驱动"（台词+旁白+内心OS），新增 Step 4.5 快速自检、情绪氛围词、衔接手法体系、失败回溯规则、11项分级质检。详见 [CHANGELOG.md](./CHANGELOG.md)。
+- **当前版本：v1.9.1**
+- **更新日期：2026-05-18**
+- **更新内容**：Anthropic 开放标准合规重构——工业级文件结构重组，新增 6 个 reference 文档，YAML frontmatter 增强，渐进式披露设计。详见 [CHANGELOG.md](./CHANGELOG.md)。
 
 ---
 

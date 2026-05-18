@@ -7,6 +7,38 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.9.1] - 2026-05-18
+
+### Anthropic Standard Compliance Refactor
+
+v1.9.1 is a structural refactoring to align with the Anthropic Agent Skills open standard. No functional changes to the 7-step workflow or core principles — only packaging, organization, and cross-platform portability improvements.
+
+### Added
+
+- **Industrial-grade file structure**: Reorganized into `SKILL.md` + `scripts/` + `references/` + `assets/` layout per Anthropic spec
+- **6 new reference documents** in `references/`:
+  - `narrative-transcoding.md` — Emotion-to-action mapping, atmosphere keywords, speed/state translation
+  - `shot-composition.md` — Shot splitting/merging rules, spatial continuity verification, transition methods
+  - `prompt-formula.md` — Complete prompt formula, punctuation standards, action description rules
+  - `quality-rubric.md` — Full 11-item quality checklist with priority levels and failure fallback rules
+  - `audio-handling.md` — Duration estimation, voice parameters, inner OS handling, dialogue relationships
+  - `parser-guide.md` — Script parser usage and output format
+- **Enhanced YAML frontmatter**:
+  - `license: MIT` added
+  - `metadata` block added with `author`, `version`, `category`, `tags`, `compatibility`
+  - `description` rewritten with clear WHAT + WHEN + trigger phrases, under 1024 chars
+- **Progressive disclosure**: Detailed rules moved from SKILL.md body to references/. SKILL.md now focuses on core workflow overview with links to deep-dive docs
+- **Quick reference links table** at end of SKILL.md for fast navigation
+
+### Changed
+
+- **SKILL.md frontmatter**: `version` moved from top-level to `metadata.version` per spec
+- **SKILL.md body**: Reduced from ~18KB to ~8KB. Detailed rules extracted to references/. Core principles and 7-step workflow retained with inline links
+- **Language consistency**: SKILL.md and all references unified to bilingual (Chinese primary, English annotations) for cross-platform compatibility
+- **README.md retained at repo level** (not inside skill folder) per Anthropic distribution guidelines
+
+---
+
 ## [1.9.0] - 2026-05-12
 
 ### 核心升级：从"台词驱动"到"音频内容驱动"
