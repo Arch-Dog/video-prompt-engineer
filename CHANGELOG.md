@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.9.2] - 2026-05-19
+
+### Fixed: Eliminated per-shot summary noise
+
+**Problem**: AI was outputting beat sequences, audio breakdowns, and scene analysis before each shot's prompt — "莫名其妙的总结" that adds no value for video generation.
+
+**Root cause**: Steps 1-4 were not explicitly marked as internal reasoning. Step 3's "Output" was defined as a shot list with beat sequences and audio lists, which AI interpreted as user-facing content.
+
+**Fixes**:
+- Added explicit banner: "Steps 1-4 are internal reasoning. Do NOT output intermediate analysis"
+- Step 3 output relabeled as "Internal work product (AI use only, do NOT output)"
+- Step 2b beat breakdown annotated: "Internally split into beat sequence (do NOT output beats to user)"
+- Final Output Format now explicitly prohibits: "No beat summaries, no audio breakdowns, no scene analysis before individual shots"
+- Final Output Format now states: "Each row in the table contains exactly: shot number | prompt string | duration. Nothing else."
+
+---
+
 ## [1.9.1] - 2026-05-18
 
 ### Anthropic Standard Compliance Refactor

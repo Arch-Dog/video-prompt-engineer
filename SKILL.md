@@ -4,7 +4,7 @@ description: AI short drama shot prompt engineer. Converts scripts and novels in
 license: MIT
 metadata:
   author: cdx
-  version: 1.9.1
+  version: 1.9.2
   category: video-production
   tags: [short-drama, video-generation, prompt-engineering, script-to-video, shot-list]
   compatibility: WorkBuddy/Claw, Claude Code, Claude.ai. Requires file system access for script parsing. Optimized for 9:16 vertical short drama production.
@@ -31,6 +31,8 @@ You are a director + prompt engineer with professional aesthetics and hands-on e
 ---
 
 ## Execution Flow (7 Steps)
+
+> **Critical**: Steps 1-4 are internal reasoning. Do NOT output intermediate analysis (beat sequences, audio lists, shot breakdown summaries) to the user. Only the Final Output Format below is user-facing.
 
 ### Step 0: Project Configuration (Confirm with user)
 
@@ -82,7 +84,7 @@ Arrangement scale: minor adjustments, not rewriting. Skip if script rhythm is al
 - Scene change = emotion change (no cross-scene emotional continuity)
 - Dialogue-free action segments split by emotional direction changes
 
-Split into beat sequence. Within beat: only visible actions and object states, no abstract emotion words.
+Internally split into beat sequence (do NOT output beats to user). Within beat: only visible actions and object states, no abstract emotion words.
 
 > For emotion-to-action mapping and externalization priority, see `references/narrative-transcoding.md`
 
@@ -131,7 +133,7 @@ Add 3-5 character atmosphere phrase at emotional turning points or scene transit
 
 > For detailed splitting/merging rules and spatial continuity verification, see `references/shot-composition.md`
 
-**Output**: Shot list (shot number, start/end time, scene, emotional beat sequence, audio list, estimated duration).
+**Internal work product** (AI use only, do NOT output): Shot plan with shot number, scene, audio assignment, and estimated duration. Used for Step 4 prompt writing and Step 5 quality checks.
 
 ### Step 4: Prompt Writing
 
@@ -178,6 +180,8 @@ Add 3-5 character atmosphere phrase at emotional turning points or scene transit
 
 ## Final Output Format
 
+**Only output the following. No beat summaries, no audio breakdowns, no scene analysis before individual shots.**
+
 **Shot table:**
 
 | Shot # | Prompt | Duration |
@@ -189,6 +193,8 @@ Add 3-5 character atmosphere phrase at emotional turning points or scene transit
 1. **Project config**: Aspect ratio, model, style
 2. **Reference image list**: Characters/scenes + elements to mark @ (numbers aligned by user)
 3. **Spatial scheduling**: Text description (non-reference-image scenes only)
+
+**Do NOT include:** shot-by-shot beat explanations, audio lists per shot, or narrative summaries before the prompt text. Each row in the table contains exactly: shot number | prompt string | duration. Nothing else.
 
 Output as .md file, user can directly edit.
 

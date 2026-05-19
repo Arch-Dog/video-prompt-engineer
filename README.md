@@ -222,9 +222,9 @@ python3 parser.py script.txt > structured_data.json
 
 ## 版本
 
-- **当前版本：v1.9.1**
-- **更新日期：2026-05-18**
-- **更新内容**：Anthropic 开放标准合规重构——工业级文件结构重组，新增 6 个 reference 文档，YAML frontmatter 增强，渐进式披露设计。详见 [CHANGELOG.md](./CHANGELOG.md)。
+- **当前版本：v1.9.2**
+- **更新日期：2026-05-19**
+- **更新内容**：修复 AI 输出噪音——明确 Steps 1-4 为内部推理过程，禁止输出 beat summary、audio breakdown 等中间分析内容。详见 [CHANGELOG.md](./CHANGELOG.md)。
 
 ---
 
